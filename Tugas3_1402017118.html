@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>kalkulator 3D</title>
+</head>
+<body>
+	<h3 id="name" style="display:none">Selamat datang</h3>
+	<script>
+		inputName();
+		function inputName() {
+			var Name = prompt("Masukkan Nama Anda");
+			var greeting = "Selamat datang "+Name;
+			document.getElementById("name").style.display="block";
+			document.getElementById("name").innerHTML = greeting;
+		}
+	</script>
+  
+    <h1>menghitung volume dan luas permukaan dari silinder,kerucut dan bola.</h1>
+    <br>
+    <br>
+    <h3> SILINDER </h3>
+    <br>
+    <form action="/action_page.php">
+        <label for="jarijari">masukkan jari-jari silinder (dalam meter):</label> <br>
+        <br>
+        <input type="text" id="jarijari">  <br>
+        <br>
+        <label for="tinggi">Masukkan tinggi silinder:</label><br>
+        <br>
+        <input type="text" id="tinggi"> <br>
+        <br>
+        <button onclick="fhitung()">hitung</button> <br>
+        <br>
+        <label for="luaspermukaan">luas permukaan:</label><br>
+        <br>
+        <input type="text" id="luaspermukaan"> <br>
+        <br>
+        <label for="volume">volume:</label><br>
+        <br>
+        <input type="text" id="volume"> <br>
+        <br>
+        
+        
+
+        
+        <script>
+          var jarijari = document.getElementById("jarijari");
+          var tinggi = document.getElementById("tinggi");
+         
+          function fhitung() {
+            luaspermukaan.value = 2 * 3.14  * jarijari.value * jarijari.value + tinggi.value;
+            volume.value = 3.14 * jarijari.value * jarijari.value + tinggi.value;
+          }
+        </script>
+      </form> 
+      
+    
+    
+</body>
+</html>
